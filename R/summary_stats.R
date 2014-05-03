@@ -3,6 +3,7 @@
 #' @param x A vector of observations.
 #' @param truth The true parameter value. Defaults to zero.
 #' @return The root mean squared error of \code{x} centered around \code{truth}.
+#' @export
 #' @examples
 #' set.seed(1)
 #' y <- rnorm(10)
@@ -22,6 +23,7 @@ rmse <- function(x, truth = 0, ...){
 #' @param x A vector of observations.
 #' @param truth The true parameter value. Defaults to zero.
 #' @return The mean squared error of \code{x} centered around \code{truth}.
+#' @export
 #' @examples
 #' y <- rnorm(10)
 #' mse(y)
@@ -41,6 +43,7 @@ mse <- function(x, truth = 0,...){
 #' @param x A vector of observations
 #' @param na.rm Remove missing values? Defaults to TRUE.
 #' @return The z-scores corresponding to \code{x}.
+#' @export
 #' @examples
 #' y <- rnorm(10, 5, 10)
 #' zscores(y)
@@ -56,6 +59,7 @@ zscores <- function(x, na.rm = FALSE){
 #' @param x A vector of grades.
 #' @param drop Number of lowest grades to drop.
 #' @return The average of \code{x} after setting missing values to zero and dropping the lowest \code{drop} observations.
+#' @export
 #' @examples
 #' grades <- c(85, 90, NA, 100, 75)
 #' drop.avg(grades, 2)
