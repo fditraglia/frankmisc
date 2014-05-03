@@ -44,5 +44,8 @@ Finally, use `library` as per usual to load the package.
 library(frankmisc)
 ```
 
-##Things I still don't understand
-I initially failed to include an `@export` statement in the `roxygen2` documentation comments. Without this, I was able to install the package locally, but installed from Github only allowed me to view the documentation: the functions themselves couldn't be found. 
+##Mistakes I made and things I'm still trying to figure our
+I initially failed to include an `@export` statement in the `roxygen2` documentation comments. Without this, I was able to install the package locally, but installed from Github only allowed me to view the documentation: the functions themselves couldn't be found. Then I started getting this weird error:
+```
+Error in fetch(key) : lazy-load database '�' is corrupt
+```
