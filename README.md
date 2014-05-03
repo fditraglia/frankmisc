@@ -49,3 +49,4 @@ I initially failed to include an `@export` statement in the `roxygen2` documenta
 ```
 Error in fetch(key) : lazy-load database '�' is corrupt
 ```
+Still not sure what's going on. See [here]("https://support.rstudio.com/hc/communities/public/questions/200477576-Strange-interaction-between-devtools-and-my-own-package") and [here]("http://stackoverflow.com/questions/18080303/rd-files-with-different-encoding")
