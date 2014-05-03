@@ -39,3 +39,7 @@ For example, to install `frankmisc` make sure that `devtools` is loaded and then
 ```
 install_github("frankmisc", "fditraglia")
 ```
+Finally, use `library` as per usual to load the package.
+```
+library(frankmisc)
+```
