@@ -1,0 +1,10 @@
+Package: frankmisc
+Title: Miscellaneous helpful functions that I use regularly
+Version: 0.1
+Authors@R: "Francis DiTraglia <fditra@sas.upenn.edu> [aut, cre]"
+Description: This is where I collect various helpful functions to stop myself
+    from having to copy and paste them from directory to directory.
+Depends:
+    R (>= 3.0.2)
+License: MIT
+LazyData: true
