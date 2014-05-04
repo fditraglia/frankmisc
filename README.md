@@ -44,10 +44,11 @@ Finally, use `library` as per usual to load the package.
 library(frankmisc)
 ```
 
-##Mistakes I made and things I'm still trying to figure our
-I initially failed to include an `@export` statement in the `roxygen2` documentation comments. Without this, I was able to install the package locally, but installed from Github only allowed me to view the documentation: the functions themselves couldn't be found. Then I started getting this weird error:
+##Mistakes I made and things I'm still trying to figure out
+I initially failed to include an `@export` statement in the `roxygen2` documentation comments. Without this, everything still worked when installed locally, but when I tried to install from Github I could only view the documentation: the functions themselves couldn't be found. 
+
+Later on, I encountered this error when trying to view documentation after install from Github
 ```
 Error in fetch(key) : lazy-load database '�' is corrupt
 ```
-Still not sure what's going on. See [here]("https://support.rstudio.com/hc/communities/public/questions/200477576-Strange-interaction-between-devtools-and-my-own-package") and [here]("http://stackoverflow.com/questions/18080303/rd-files-with-different-encoding")
-Aha! It seems that you have to restart R if you want to run the command `install` again. After re-starting, everything just worked. Not sure exactly why.
+It seems that the solution is simply to restart R. According to [Hadley]("http://stackoverflow.com/questions/18080303/rd-files-with-different-encoding") "you'll need to restart R after invocations of `install`."
