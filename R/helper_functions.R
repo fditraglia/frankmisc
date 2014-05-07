@@ -72,3 +72,16 @@ drop.avg <- function(x, drop){
   return(mean(x))
 }
 
+
+#' @title Extract prefixes from a vector of email addresses
+#' @description This function extracts the prefixes, i.e. everything before the @@ symbol, from a vector of email addresses.
+#' @param x A vector of text strings, each of which is an email address.
+#' @return The email prefixes, i.e. everything before the @@ symbol.
+#' @export
+#' @examples
+#' emails <- c("foo@@bar.com", "bar@@foo.com")
+#' premail(emails)
+premail <- function(x){
+  sapply(strsplit(x, "@"), `[[`, 1)
+}
+
